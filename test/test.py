@@ -19,6 +19,11 @@ from keras.callbacks import TensorBoard
 from keras.utils import plot_model
 from keras.callbacks import ModelCheckpoint
 
+### read model
+n=0
+with open('parameter.list') as rt:
+	for line in rt:
+		nmodel=str(line.split()[0])
 
 in_data, out_data, nev, info = [], [], [], []
 with open('../data/test.list') as l:
@@ -208,7 +213,6 @@ model.compile(loss=keras.losses.binary_crossentropy,
               optimizer=keras.optimizers.Adam(lr=0.001),
               metrics=['accuracy'])
 
-nmodel='../model/model_paper.h5'
 model.load_weights(nmodel)
 
 results=model.predict(in_data)
