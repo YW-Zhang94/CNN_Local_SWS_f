@@ -21,7 +21,7 @@ from keras.callbacks import ModelCheckpoint
 
 ### read model
 n=0
-with open('parameter.list') as rt:
+with open('model.list') as rt:
 	for line in rt:
 		nmodel=str(line.split()[0])
 
