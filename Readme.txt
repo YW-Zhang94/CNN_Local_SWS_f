@@ -19,8 +19,13 @@ Data structure:
 
 Data, in the paper (Zhang and Gao, 2024), should be download from figshare (https://figshare.com/articles/dataset/CNN_Local_SWS_f/24714855) and unzip under ~/data.
 
-All sac files must be stored at:
+All SAC files must be stored at:
 ~/data/SWS_trace/stname_NW/EQ12345678901/stname_NW.n
+
+SAC header should contain:
+        b: Beginning value of the independent variable. 
+        o: Event origin time (seconds relative to reference time).
+        f: end of time window (just for training).
 
 stname_NW:
         stname is station name. If station name is less than 6 character, shoud be filled by 'x'.
@@ -61,7 +66,6 @@ The list of event must be at ~/data/train.list
 Training process:
 
 Run Do_train.cmd to train CNN.
-The parameters can be changed at ~/train/2_train/parameter.list
 Link of training dataset in the paper (Zhang and Gao, 2024): https://figshare.com/articles/dataset/CNN_Local_SWS_f/24714855
         Download under ~/data/ 
         Unzip to use it.
@@ -71,8 +75,8 @@ Link of training dataset in the paper (Zhang and Gao, 2024): https://figshare.co
 
 Testing process:
 
-Run Do_load.cmd to run CNN.
-The parameters can be changed at ~/test/parameter.list
+Run Do_test.cmd to run CNN.
+The CNN model can be changed at ~/test/model.list
 CNN model of paper is at ~/model/model_paper.h5
 Output is at ~/test/Outp/stname_NW_EQ12345678901_000000.xxxx
         000000 is number of measurement.
