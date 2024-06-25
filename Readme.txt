@@ -9,7 +9,7 @@ Versions:
         Tensorflow 1.14.0
         Keras 2.2.5
 
-**Please report confusions/errors to yzcd4@umsystem.edu or sgao@mst.edu
+**Please report confusions/errors to y230z012@ku.edu or sgao@mst.edu
 
 The technique is decribed in the paper: 
 
