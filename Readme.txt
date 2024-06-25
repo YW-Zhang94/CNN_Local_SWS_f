@@ -12,6 +12,7 @@ Versions:
 **Please report confusions/errors to y230z012@ku.edu or sgao@mst.edu
 
 The technique is decribed in the paper: 
+Zhang, Y., and S. S. Gao (2024). Using Convolutional Neural Network to Determine Time Window for Analyzing Local Shear-Wave Splitting Measurements, Seismol. Res. Lett. XX, 1–7, doi: 10.1785/0220230410.
 
 ------------------------------------------------
 
